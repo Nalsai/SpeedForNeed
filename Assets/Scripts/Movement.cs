@@ -11,9 +11,12 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        power = GameController.power;
+        maxspeed = GameController.maxspeed;
+        turnpower = GameController.turnpower;
+        friction = GameController.friction;
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
-
 
     void FixedUpdate()
     {
@@ -45,7 +48,6 @@ public class Movement : MonoBehaviour
         }
 
         noGas();
-
     }
 
     void noGas()

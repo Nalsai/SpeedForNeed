@@ -2,12 +2,19 @@
 
 public class Movement : MonoBehaviour
 {
-    public float power = 3;
-    public float maxspeed = 5;
-    public float turnpower = 2;
-    public float friction = 3;
+    float power = 3;
+    float maxspeed = 5;
+    float turnpower = 2;
+    float friction = 3;
     public Vector2 curspeed;
     Rigidbody2D rigidbody2D;
+
+    void Update()
+    {
+        float currentSpeed = rigidbody2D.velocity.magnitude * 6;
+        float pitch = currentSpeed / maxspeed;
+        GetComponent<AudioSource>().pitch = pitch;
+    }
 
     void Start()
     {
@@ -47,10 +54,10 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.forward * -turnpower);
         }
 
-        noGas();
+        NoGas();
     }
 
-    void noGas()
+    void NoGas()
     {
         bool gas;
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))

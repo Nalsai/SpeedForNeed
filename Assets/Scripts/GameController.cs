@@ -3,15 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject Music;
 
     public GameObject RedCarPre;
     public GameObject BlueCarPre;
     public GameObject GreenCarPre;
     public GameObject ComPre;
+    GameObject Music;
     GameObject RedCar;
     GameObject BlueCar;
     GameObject GreenCar;
+    Vector3 Position;
+    Quaternion Rotation;
 
     public static bool RedCheat = true;
     public static bool BlueCheat = true;
@@ -28,26 +30,41 @@ public class GameController : MonoBehaviour
     {
         SceneName = SceneManager.GetActiveScene().name;
 
+
+        if (SceneName == "GreenLight")
+            Position = new Vector3(4.5f, 0f, -1f);
+        else if (SceneName == "HappinessDistance")
+            Position = new Vector3(-5.5f, -1.75f, -1f);
+
         if (MenuController.Player == 1)
         {
-            Instantiate(RedCarPre);
-            Instantiate(ComPre);
+            Position.x = Position.x + 0.2f;
+            Instantiate(RedCarPre, Position, Rotation);
+            Position.x = Position.x - 0.4f;
+            Instantiate(ComPre, Position, Rotation);
         }
         if (MenuController.Player == 2)
         {
-            Instantiate(RedCarPre);
-            Instantiate(BlueCarPre);
+            Position.x = Position.x + 0.2f;
+            Instantiate(RedCarPre, Position, Rotation);
+            Position.x = Position.x - 0.4f;
+            Instantiate(BlueCarPre, Position, Rotation);
         }
         if (MenuController.Player == 3)
         {
-            Instantiate(RedCarPre);
-            Instantiate(BlueCarPre);
-            Instantiate(GreenCarPre);
+            Position.x = Position.x + 0.3f;
+            Instantiate(RedCarPre, Position, Rotation);
+            Position.x = Position.x - 0.3f;
+            Instantiate(BlueCarPre, Position, Rotation);
+            Position.x = Position.x - 0.3f;
+            Instantiate(GreenCarPre, Position, Rotation);
         }
 
         RedCar = GameObject.FindWithTag("Rot");
         BlueCar = GameObject.FindWithTag("Blau");
         GreenCar = GameObject.FindWithTag("Gruen");
+
+        Music = GameObject.FindWithTag("Music");
 
         if (MenuController.Music == false)
             Music.GetComponent<AudioSource>().mute = true;

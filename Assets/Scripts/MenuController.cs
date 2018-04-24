@@ -1,14 +1,38 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
     public static bool Music = true;
     public static bool SFX = true;
-    bool GL;
-    bool HD;
     public static int Player = 3;
+    public GameObject MusicToggleObj;
+    public GameObject GLToggleObj;
+    public GameObject HDToggleObj;
+    GameObject MusicObj;
     string Strecke = "GreenLight";
+    bool GL = true;
+    bool HD = false;
+
+
+    private void Start()
+    {
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            MusicToggleObj.GetComponent<Toggle>().isOn = false;
+            Music = false;
+        }
+        MusicObj = GameObject.FindWithTag("Music");
+    }
+
+    private void FixedUpdate()
+    {
+        if (Music == false)
+            MusicObj.GetComponent<AudioSource>().mute = true;
+        else
+            MusicObj.GetComponent<AudioSource>().mute = false;
+    }
 
     public void MusicToggle()
     {
@@ -28,18 +52,48 @@ public class MenuController : MonoBehaviour
 
     public void GLToggle()
     {
-        if (SFX)
-            SFX = false;
+        if (GL)
+        {
+            HDToggleObj.GetComponent<Toggle>().isOn = true;
+            GL = false;
+        }
         else
-            SFX = true;
+        {
+            HDToggleObj.GetComponent<Toggle>().isOn = false;
+            GL = true;
+        }
+
+        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
+        {
+            Strecke = "GreenLight";
+        }
+        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
+        {
+            Strecke = "HappinessDistance";
+        }
     }
 
     public void HDToggle()
     {
         if (HD)
-            SFX = false;
+        {
+            GLToggleObj.GetComponent<Toggle>().isOn = true;
+            HD = false;
+        }
         else
-            SFX = true;
+        {
+            GLToggleObj.GetComponent<Toggle>().isOn = false;
+            HD = true;
+        }
+
+        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
+        {
+            Strecke = "GreenLight";
+        }
+        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
+        {
+            Strecke = "HappinessDistance";
+        }
     }
 
     public void Start1P()
@@ -55,6 +109,10 @@ public class MenuController : MonoBehaviour
     public void Start3P()
     {
         Player = 3;
+        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
+            Strecke = "GreenLight";
+        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
+            Strecke = "HappinessDistance";
         SceneManager.LoadScene(Strecke);
     }
 }

@@ -17338,7 +17338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf626322ea71f434ca0effef3f6efcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Music: {fileID: 1280213145}
   RedCarPre: {fileID: 1417556336089046, guid: 2f7158b96c7204c4e94b17f3bc03854d, type: 2}
   BlueCarPre: {fileID: 1932013854310944, guid: 94600e54f8ac1244ba8e7f9e163e171b, type: 2}
   GreenCarPre: {fileID: 1298377448544600, guid: 1793c35f0c8e85d4ba89ae9f087831db,
@@ -17472,7 +17471,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1924159035
 RectTransform:

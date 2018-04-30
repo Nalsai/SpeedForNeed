@@ -1913,7 +1913,7 @@ GameObject:
   - component: {fileID: 1495634151}
   - component: {fileID: 1495634150}
   m_Layer: 0
-  m_Name: SfNMenu
+  m_Name: Music
   m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1928,9 +1928,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d7d5e67a97f455142a1494462d92ade2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e81286a334102bf44913c804c2bb4df6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0

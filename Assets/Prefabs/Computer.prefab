@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50689868550496892}
   - component: {fileID: 70340503516655816}
   - component: {fileID: 82029206606385044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Computer
   m_TagString: Gruen
   m_Icon: {fileID: 0}

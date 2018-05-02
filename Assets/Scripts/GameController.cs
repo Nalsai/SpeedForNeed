@@ -30,7 +30,6 @@ public class GameController : MonoBehaviour
     {
         SceneName = SceneManager.GetActiveScene().name;
 
-
         if (SceneName == "GreenLight")
             Position = new Vector3(4.5f, 0f, -1f);
         else if (SceneName == "HappinessDistance")

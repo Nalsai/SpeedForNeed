@@ -8,6 +8,7 @@ public class Laps : MonoBehaviour
     int Rot;
     int Blau;
     int Gruen;
+    bool won;
     public GameObject WinnerCanvas;
     public Text WinnerText;
     public Text LapText;
@@ -40,22 +41,28 @@ public class Laps : MonoBehaviour
         }
         LapText.text = "Laps:" + Environment.NewLine + "Red Car: " + Rot + Environment.NewLine + "Blue Car: " + Blau + Environment.NewLine + "Green Car: " + Gruen;
 
-        if (Rot > 3)
+        if (won == false)
         {
-            WinnerCanvas.SetActive(true);
-            WinnerText.text = "The red car won the race!";
-        }
+            if (Rot > 3)
+            {
+                WinnerCanvas.SetActive(true);
+                WinnerText.text = "The red car won the race!";
+                won = true;
+            }
 
-        if (Blau > 3)
-        {
-            WinnerCanvas.SetActive(true);
-            WinnerText.text = "The blue car won the race!";
-        }
+            if (Blau > 3)
+            {
+                WinnerCanvas.SetActive(true);
+                WinnerText.text = "The blue car won the race!";
+                won = true;
+            }
 
-        if (Gruen > 3)
-        {
-            WinnerCanvas.SetActive(true);
-            WinnerText.text = "The green car won the race!";
+            if (Gruen > 3)
+            {
+                WinnerCanvas.SetActive(true);
+                WinnerText.text = "The green car won the race!";
+                won = true;
+            }
         }
     }
 }

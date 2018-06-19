@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
 
+    public GameObject Car1Pre;
     public GameObject RedCarPre;
+    public GameObject Formel1Pre;
+    public GameObject Car2Pre;
     public GameObject BlueCarPre;
+    public GameObject Formel2Pre;
+    public GameObject Car3Pre;
     public GameObject GreenCarPre;
+    public GameObject Formel3Pre;
     public GameObject ComPre;
     GameObject Music;
     GameObject RedCar;
@@ -31,32 +37,42 @@ public class GameController : MonoBehaviour
         SceneName = SceneManager.GetActiveScene().name;
 
         if (SceneName == "GreenLight")
+        {
             Position = new Vector3(4.5f, 0f, -1f);
+            Car1Pre = RedCarPre;
+            Car2Pre = BlueCarPre;
+            Car3Pre = GreenCarPre;
+        }
         else if (SceneName == "HappinessDistance")
+        {
             Position = new Vector3(-5.5f, -1.75f, -1f);
+            Car1Pre = Formel1Pre;
+            Car2Pre = Formel2Pre;
+            Car3Pre = Formel3Pre;
+        }
 
         if (MenuController.Player == 1)
         {
             Position.x = Position.x + 0.2f;
-            Instantiate(RedCarPre, Position, Rotation);
+            Instantiate(Car1Pre, Position, Rotation);
             Position.x = Position.x - 0.4f;
             Instantiate(ComPre, Position, Rotation);
         }
         if (MenuController.Player == 2)
         {
             Position.x = Position.x + 0.2f;
-            Instantiate(RedCarPre, Position, Rotation);
+            Instantiate(Car1Pre, Position, Rotation);
             Position.x = Position.x - 0.4f;
-            Instantiate(BlueCarPre, Position, Rotation);
+            Instantiate(Car2Pre, Position, Rotation);
         }
         if (MenuController.Player == 3)
         {
             Position.x = Position.x + 0.3f;
-            Instantiate(RedCarPre, Position, Rotation);
+            Instantiate(Car1Pre, Position, Rotation);
             Position.x = Position.x - 0.3f;
-            Instantiate(BlueCarPre, Position, Rotation);
+            Instantiate(Car2Pre, Position, Rotation);
             Position.x = Position.x - 0.3f;
-            Instantiate(GreenCarPre, Position, Rotation);
+            Instantiate(Car3Pre, Position, Rotation);
         }
 
         RedCar = GameObject.FindWithTag("Rot");

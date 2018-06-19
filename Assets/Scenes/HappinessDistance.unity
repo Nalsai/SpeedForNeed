@@ -384,10 +384,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf626322ea71f434ca0effef3f6efcaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Car1Pre: {fileID: 0}
   RedCarPre: {fileID: 1417556336089046, guid: 2f7158b96c7204c4e94b17f3bc03854d, type: 2}
+  Formel1Pre: {fileID: 1875739743622258, guid: d30a2261dee520a4a976704175daca45, type: 2}
+  Car2Pre: {fileID: 0}
   BlueCarPre: {fileID: 1932013854310944, guid: 94600e54f8ac1244ba8e7f9e163e171b, type: 2}
+  Formel2Pre: {fileID: 1589046268237422, guid: ea63be2fc54a34d47a48e3445956a090, type: 2}
+  Car3Pre: {fileID: 0}
   GreenCarPre: {fileID: 1298377448544600, guid: 1793c35f0c8e85d4ba89ae9f087831db,
     type: 2}
+  Formel3Pre: {fileID: 1280287348209428, guid: ba5f1c1cde7d9a34f8919ba1a6be0431, type: 2}
   ComPre: {fileID: 1298377448544600, guid: f849e55042e4afd4693052bc4dd3481e, type: 2}
 --- !u!4 &189976764
 Transform:
@@ -617,7 +623,7 @@ Camera:
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &442441588
@@ -627,7 +633,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 442441584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.01, y: 0.01, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1120,7 +1126,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957324744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2, y: 0, z: -1}
+  m_LocalPosition: {x: -6.2, y: 0, z: -0.1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}

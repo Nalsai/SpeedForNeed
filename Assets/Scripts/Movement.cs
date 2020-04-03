@@ -2,32 +2,28 @@
 
 public class Movement : MonoBehaviour
 {
-    float power = 3;
-    float maxspeed = 5;
-    float turnpower = 2;
-    float friction = 3;
+    public float power = 7;
+    public float maxspeed = 10;
+    public float turnpower = 3;
+    public float friction = 3;
     public Vector2 curspeed;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rdbody;
 
     void Update()
     {
-        float currentSpeed = rigidbody2D.velocity.magnitude * 6;
+        float currentSpeed = rdbody.velocity.magnitude * 6;
         float pitch = currentSpeed / maxspeed;
         GetComponent<AudioSource>().pitch = pitch;
     }
 
     void Start()
     {
-        power = GameController.power;
-        maxspeed = GameController.maxspeed;
-        turnpower = GameController.turnpower;
-        friction = GameController.friction;
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rdbody = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        curspeed = new Vector2(rigidbody2D.velocity.x, rigidbody2D.velocity.y);
+        curspeed = new Vector2(rdbody.velocity.x, rdbody.velocity.y);
 
         if (curspeed.magnitude > maxspeed)
         {
@@ -37,13 +33,13 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            rigidbody2D.AddForce(transform.up * power);
-            rigidbody2D.drag = friction;
+            rdbody.AddForce(transform.up * power);
+            rdbody.drag = friction;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rigidbody2D.AddForce(-(transform.up) * (power / 2));
-            rigidbody2D.drag = friction;
+            rdbody.AddForce(-(transform.up) * (power / 2));
+            rdbody.drag = friction;
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -71,7 +67,7 @@ public class Movement : MonoBehaviour
 
         if (!gas)
         {
-            rigidbody2D.drag = friction * 2;
+            rdbody.drag = friction * 2;
         }
     }
 }

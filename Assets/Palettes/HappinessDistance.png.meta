@@ -1,74 +1,198 @@
 fileFormatVersion: 2
 guid: 53927bcbf6ff25242aa63e991d9bd251
-timeCreated: 1524401543
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: HappinessDistance_0
-    21300002: HappinessDistance_1
-    21300004: HappinessDistance_2
-    21300006: HappinessDistance_3
-    21300008: HappinessDistance_4
-    21300010: HappinessDistance_5
-    21300012: HappinessDistance_6
-    21300014: HappinessDistance_7
-    21300016: HappinessDistance_8
-    21300018: HappinessDistance_9
-    21300020: HappinessDistance_10
-    21300022: HappinessDistance_11
-    21300024: HappinessDistance_12
-    21300026: HappinessDistance_13
-    21300028: HappinessDistance_14
-    21300030: HappinessDistance_15
-    21300032: HappinessDistance_16
-    21300034: HappinessDistance_17
-    21300036: HappinessDistance_18
-    21300038: HappinessDistance_19
-    21300040: HappinessDistance_20
-    21300042: HappinessDistance_21
-    21300044: HappinessDistance_22
-    21300046: HappinessDistance_23
-    21300048: HappinessDistance_24
-    21300050: HappinessDistance_25
-    21300052: HappinessDistance_26
-    21300054: HappinessDistance_27
-    21300056: HappinessDistance_28
-    21300058: HappinessDistance_29
-    21300060: HappinessDistance_30
-    21300062: HappinessDistance_31
-    21300064: HappinessDistance_32
-    21300066: HappinessDistance_33
-    21300068: HappinessDistance_34
-    21300070: HappinessDistance_35
-    21300072: HappinessDistance_36
-    21300074: HappinessDistance_37
-    21300076: HappinessDistance_38
-    21300078: HappinessDistance_39
-    21300080: HappinessDistance_40
-    21300082: HappinessDistance_41
-    21300084: HappinessDistance_42
-    21300086: HappinessDistance_43
-    21300088: HappinessDistance_44
-    21300090: HappinessDistance_45
-    21300092: HappinessDistance_46
-    21300094: HappinessDistance_47
-    21300096: HappinessDistance_48
-    21300098: HappinessDistance_49
-    21300100: HappinessDistance_50
-    21300102: HappinessDistance_51
-    21300104: HappinessDistance_52
-    21300106: HappinessDistance_53
-    21300108: HappinessDistance_54
-    21300110: HappinessDistance_55
-    21300112: HappinessDistance_56
-    21300114: HappinessDistance_57
-    21300116: HappinessDistance_58
-    21300118: HappinessDistance_59
-    21300120: HappinessDistance_60
-    21300122: HappinessDistance_61
-    21300124: HappinessDistance_62
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: HappinessDistance_0
+  - first:
+      213: 21300002
+    second: HappinessDistance_1
+  - first:
+      213: 21300004
+    second: HappinessDistance_2
+  - first:
+      213: 21300006
+    second: HappinessDistance_3
+  - first:
+      213: 21300008
+    second: HappinessDistance_4
+  - first:
+      213: 21300010
+    second: HappinessDistance_5
+  - first:
+      213: 21300012
+    second: HappinessDistance_6
+  - first:
+      213: 21300014
+    second: HappinessDistance_7
+  - first:
+      213: 21300016
+    second: HappinessDistance_8
+  - first:
+      213: 21300018
+    second: HappinessDistance_9
+  - first:
+      213: 21300020
+    second: HappinessDistance_10
+  - first:
+      213: 21300022
+    second: HappinessDistance_11
+  - first:
+      213: 21300024
+    second: HappinessDistance_12
+  - first:
+      213: 21300026
+    second: HappinessDistance_13
+  - first:
+      213: 21300028
+    second: HappinessDistance_14
+  - first:
+      213: 21300030
+    second: HappinessDistance_15
+  - first:
+      213: 21300032
+    second: HappinessDistance_16
+  - first:
+      213: 21300034
+    second: HappinessDistance_17
+  - first:
+      213: 21300036
+    second: HappinessDistance_18
+  - first:
+      213: 21300038
+    second: HappinessDistance_19
+  - first:
+      213: 21300040
+    second: HappinessDistance_20
+  - first:
+      213: 21300042
+    second: HappinessDistance_21
+  - first:
+      213: 21300044
+    second: HappinessDistance_22
+  - first:
+      213: 21300046
+    second: HappinessDistance_23
+  - first:
+      213: 21300048
+    second: HappinessDistance_24
+  - first:
+      213: 21300050
+    second: HappinessDistance_25
+  - first:
+      213: 21300052
+    second: HappinessDistance_26
+  - first:
+      213: 21300054
+    second: HappinessDistance_27
+  - first:
+      213: 21300056
+    second: HappinessDistance_28
+  - first:
+      213: 21300058
+    second: HappinessDistance_29
+  - first:
+      213: 21300060
+    second: HappinessDistance_30
+  - first:
+      213: 21300062
+    second: HappinessDistance_31
+  - first:
+      213: 21300064
+    second: HappinessDistance_32
+  - first:
+      213: 21300066
+    second: HappinessDistance_33
+  - first:
+      213: 21300068
+    second: HappinessDistance_34
+  - first:
+      213: 21300070
+    second: HappinessDistance_35
+  - first:
+      213: 21300072
+    second: HappinessDistance_36
+  - first:
+      213: 21300074
+    second: HappinessDistance_37
+  - first:
+      213: 21300076
+    second: HappinessDistance_38
+  - first:
+      213: 21300078
+    second: HappinessDistance_39
+  - first:
+      213: 21300080
+    second: HappinessDistance_40
+  - first:
+      213: 21300082
+    second: HappinessDistance_41
+  - first:
+      213: 21300084
+    second: HappinessDistance_42
+  - first:
+      213: 21300086
+    second: HappinessDistance_43
+  - first:
+      213: 21300088
+    second: HappinessDistance_44
+  - first:
+      213: 21300090
+    second: HappinessDistance_45
+  - first:
+      213: 21300092
+    second: HappinessDistance_46
+  - first:
+      213: 21300094
+    second: HappinessDistance_47
+  - first:
+      213: 21300096
+    second: HappinessDistance_48
+  - first:
+      213: 21300098
+    second: HappinessDistance_49
+  - first:
+      213: 21300100
+    second: HappinessDistance_50
+  - first:
+      213: 21300102
+    second: HappinessDistance_51
+  - first:
+      213: 21300104
+    second: HappinessDistance_52
+  - first:
+      213: 21300106
+    second: HappinessDistance_53
+  - first:
+      213: 21300108
+    second: HappinessDistance_54
+  - first:
+      213: 21300110
+    second: HappinessDistance_55
+  - first:
+      213: 21300112
+    second: HappinessDistance_56
+  - first:
+      213: 21300114
+    second: HappinessDistance_57
+  - first:
+      213: 21300116
+    second: HappinessDistance_58
+  - first:
+      213: 21300118
+    second: HappinessDistance_59
+  - first:
+      213: 21300120
+    second: HappinessDistance_60
+  - first:
+      213: 21300122
+    second: HappinessDistance_61
+  - first:
+      213: 21300124
+    second: HappinessDistance_62
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -86,6 +210,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -96,7 +222,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,18 +234,22 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -129,7 +259,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -139,7 +271,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -149,7 +283,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Windows Store Apps
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -159,7 +295,9 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -169,6 +307,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -186,6 +325,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_1
       rect:
@@ -200,6 +346,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_2
       rect:
@@ -214,6 +367,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_3
       rect:
@@ -228,6 +388,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_4
       rect:
@@ -242,6 +409,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_5
       rect:
@@ -256,6 +430,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_6
       rect:
@@ -270,6 +451,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_7
       rect:
@@ -284,6 +472,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_8
       rect:
@@ -298,6 +493,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_9
       rect:
@@ -312,6 +514,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_10
       rect:
@@ -326,6 +535,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_11
       rect:
@@ -340,6 +556,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_12
       rect:
@@ -354,6 +577,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_13
       rect:
@@ -368,6 +598,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_14
       rect:
@@ -382,6 +619,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_15
       rect:
@@ -396,6 +640,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_16
       rect:
@@ -410,6 +661,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_17
       rect:
@@ -424,6 +682,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_18
       rect:
@@ -438,6 +703,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_19
       rect:
@@ -452,6 +724,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_20
       rect:
@@ -466,6 +745,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_21
       rect:
@@ -480,6 +766,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_22
       rect:
@@ -494,6 +787,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_23
       rect:
@@ -508,6 +808,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_24
       rect:
@@ -522,6 +829,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_25
       rect:
@@ -536,6 +850,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_26
       rect:
@@ -550,6 +871,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_27
       rect:
@@ -564,6 +892,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_28
       rect:
@@ -578,6 +913,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_29
       rect:
@@ -592,6 +934,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_30
       rect:
@@ -606,6 +955,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_31
       rect:
@@ -620,6 +976,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_32
       rect:
@@ -634,6 +997,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_33
       rect:
@@ -648,6 +1018,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_34
       rect:
@@ -662,6 +1039,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_35
       rect:
@@ -676,6 +1060,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_36
       rect:
@@ -690,6 +1081,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_37
       rect:
@@ -704,6 +1102,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_38
       rect:
@@ -718,6 +1123,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_39
       rect:
@@ -732,6 +1144,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_40
       rect:
@@ -746,6 +1165,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_41
       rect:
@@ -760,6 +1186,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_42
       rect:
@@ -774,6 +1207,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_43
       rect:
@@ -788,6 +1228,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_44
       rect:
@@ -802,6 +1249,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_45
       rect:
@@ -816,6 +1270,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_46
       rect:
@@ -830,6 +1291,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_47
       rect:
@@ -844,6 +1312,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_48
       rect:
@@ -858,6 +1333,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_49
       rect:
@@ -872,6 +1354,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_50
       rect:
@@ -886,6 +1375,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_51
       rect:
@@ -900,6 +1396,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_52
       rect:
@@ -914,6 +1417,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_53
       rect:
@@ -928,6 +1438,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_54
       rect:
@@ -942,6 +1459,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_55
       rect:
@@ -956,6 +1480,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_56
       rect:
@@ -970,6 +1501,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_57
       rect:
@@ -984,6 +1522,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_58
       rect:
@@ -998,6 +1543,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_59
       rect:
@@ -1012,6 +1564,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_60
       rect:
@@ -1026,6 +1585,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_61
       rect:
@@ -1040,6 +1606,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: HappinessDistance_62
       rect:
@@ -1054,9 +1627,26 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

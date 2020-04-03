@@ -25,11 +25,6 @@ public class GameController : MonoBehaviour
     public static bool BlueCheat = true;
     public static bool GreenCheat = true;
 
-    public static float power = 7;
-    public static float maxspeed = 10;
-    public static float turnpower = 3;
-    public static float friction = 3;
-
     string SceneName;
 
     private void Start()

@@ -46,6 +46,24 @@ public class GameController : MonoBehaviour
             Car3Pre = Formel3Pre;
         }
 
+        Movement m1 = Car1Pre.GetComponent<Movement>();
+        m1.KeyCodeUp = KeyCode.W;
+        m1.KeyCodeDown = KeyCode.S;
+        m1.KeyCodeLeft = KeyCode.A;
+        m1.KeyCodeRight = KeyCode.D;
+
+        Movement m2 = Car2Pre.GetComponent<Movement>();
+        m2.KeyCodeUp = KeyCode.UpArrow;
+        m2.KeyCodeDown = KeyCode.DownArrow;
+        m2.KeyCodeLeft = KeyCode.LeftArrow;
+        m2.KeyCodeRight = KeyCode.RightArrow;
+
+        Movement m3 = Car3Pre.GetComponent<Movement>();
+        m3.KeyCodeUp = KeyCode.I;
+        m3.KeyCodeDown = KeyCode.K;
+        m3.KeyCodeLeft = KeyCode.J;
+        m3.KeyCodeRight = KeyCode.L;
+
         if (MenuController.Player == 1)
         {
             Position.x = Position.x + 0.2f;

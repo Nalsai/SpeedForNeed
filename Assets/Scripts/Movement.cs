@@ -8,6 +8,11 @@ public class Movement : MonoBehaviour
     public float friction = 3;
     public Vector2 curspeed;
     Rigidbody2D rdbody;
+    public KeyCode KeyCodeUp = KeyCode.W;
+    public KeyCode KeyCodeDown = KeyCode.S;
+    public KeyCode KeyCodeLeft = KeyCode.A;
+    public KeyCode KeyCodeRight = KeyCode.D;
+
 
     void Update()
     {
@@ -31,21 +36,21 @@ public class Movement : MonoBehaviour
             curspeed *= maxspeed;
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCodeUp))
         {
             rdbody.AddForce(transform.up * power);
             rdbody.drag = friction;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCodeDown))
         {
             rdbody.AddForce(-(transform.up) * (power / 2));
             rdbody.drag = friction;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCodeLeft))
         {
             transform.Rotate(Vector3.forward * turnpower);
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCodeRight))
         {
             transform.Rotate(Vector3.forward * -turnpower);
         }
@@ -56,7 +61,7 @@ public class Movement : MonoBehaviour
     void NoGas()
     {
         bool gas;
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCodeUp) || Input.GetKey(KeyCodeDown))
         {
             gas = true;
         }

@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589046268237422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef0b7ad1dc0827c4b9db574490c4d1b5, type: 3}
+  m_Script: {fileID: 11500000, guid: edd5b72e2b70511428f2f99290d0eb9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   power: 15
@@ -102,6 +102,10 @@ MonoBehaviour:
   turnpower: 4
   friction: 3
   curspeed: {x: 0, y: 0}
+  KeyCodeUp: 119
+  KeyCodeDown: 115
+  KeyCodeLeft: 97
+  KeyCodeRight: 100
 --- !u!50 &50788134863333998
 Rigidbody2D:
   serializedVersion: 4

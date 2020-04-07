@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 70515870922294070}
   - component: {fileID: 82940789129510724}
   m_Layer: 0
-  m_Name: Formel1 rot
-  m_TagString: Rot
+  m_Name: FastCar3
+  m_TagString: Player3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,10 @@ MonoBehaviour:
   turnpower: 4
   friction: 3
   curspeed: {x: 0, y: 0}
+  KeyCodeUp: 119
+  KeyCodeDown: 115
+  KeyCodeLeft: 97
+  KeyCodeRight: 100
 --- !u!50 &50473691489340600
 Rigidbody2D:
   serializedVersion: 4
@@ -149,7 +153,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 88b76c6505d99af4faf7bb6f34da1c09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 03e3bd08a6e70684dbe299a3e185fdd2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

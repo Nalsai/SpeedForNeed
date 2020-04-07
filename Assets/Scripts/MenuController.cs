@@ -4,115 +4,94 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
-    public static bool Music = true;
-    public static bool SFX = true;
-    public static int Player = 3;
-    public GameObject MusicToggleObj;
-    public GameObject GLToggleObj;
-    public GameObject HDToggleObj;
-    GameObject MusicObj;
-    string Strecke = "GreenLight";
+    public static bool MuteMusic;
+    public static bool MuteSFX;
+    public static int Players;
+    public Toggle MusicToggle;
+    public Toggle GreenLightToggle;
+    public Toggle HappinessDistanceToggle;
+    string Track = "GreenLight";
     bool GL = true;
     bool HD = false;
-
 
     private void Start()
     {
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
-            MusicToggleObj.GetComponent<Toggle>().isOn = false;
-            Music = false;
+            MuteMusic = true;
         }
-        MusicObj = GameObject.FindWithTag("Music");
+        MusicToggle.isOn = !MuteMusic;
     }
 
-    private void FixedUpdate()
+    public void ToggleMusic()
     {
-        if (Music == false)
-            MusicObj.GetComponent<AudioSource>().mute = true;
-        else
-            MusicObj.GetComponent<AudioSource>().mute = false;
+        MuteMusic = !MuteMusic;
+        GameObject.FindWithTag("Music").GetComponent<AudioSource>().mute = MuteMusic;
     }
 
-    public void MusicToggle()
+    public void ToggleSFX()
     {
-        if (Music)
-            Music = false;
-        else
-            Music = true;
+        MuteSFX = !MuteSFX;
     }
 
-    public void SFXToggle()
-    {
-        if (SFX)
-            SFX = false;
-        else
-            SFX = true;
-    }
-
-    public void GLToggle()
+    public void ToggleGreenLight()
     {
         if (GL)
         {
-            HDToggleObj.GetComponent<Toggle>().isOn = true;
+            HappinessDistanceToggle.isOn = true;
             GL = false;
         }
         else
         {
-            HDToggleObj.GetComponent<Toggle>().isOn = false;
+            HappinessDistanceToggle.isOn = false;
             GL = true;
         }
 
-        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
+        if (GreenLightToggle.isOn == true)
         {
-            Strecke = "GreenLight";
+            Track = "GreenLight";
         }
-        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
+        else if (HappinessDistanceToggle.isOn == true)
         {
-            Strecke = "HappinessDistance";
+            Track = "HappinessDistance";
         }
     }
-
-    public void HDToggle()
+    public void ToggleHappinessDistance()
     {
         if (HD)
         {
-            GLToggleObj.GetComponent<Toggle>().isOn = true;
+            GreenLightToggle.isOn = true;
             HD = false;
         }
         else
         {
-            GLToggleObj.GetComponent<Toggle>().isOn = false;
+            GreenLightToggle.isOn = false;
             HD = true;
         }
 
-        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
+        if (GreenLightToggle.isOn == true)
         {
-            Strecke = "GreenLight";
+            Track = "GreenLight";
         }
-        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
+        else if (HappinessDistanceToggle.isOn == true)
         {
-            Strecke = "HappinessDistance";
+            Track = "HappinessDistance";
         }
     }
 
     public void Start1P()
     {
-        Player = 1;
-        SceneManager.LoadScene(Strecke);
+        Players = 1;
+        SceneManager.LoadScene(Track);
     }
     public void Start2P()
     {
-        Player = 2;
-        SceneManager.LoadScene(Strecke);
+        Players = 2;
+        SceneManager.LoadScene(Track);
     }
     public void Start3P()
     {
-        Player = 3;
-        if (GLToggleObj.GetComponent<Toggle>().isOn == true)
-            Strecke = "GreenLight";
-        else if (HDToggleObj.GetComponent<Toggle>().isOn == true)
-            Strecke = "HappinessDistance";
-        SceneManager.LoadScene(Strecke);
+        Players = 3;
+        SceneManager.LoadScene(Track);
     }
 }

@@ -6,13 +6,13 @@ public class Movement : MonoBehaviour
     public float maxspeed = 10;
     public float turnpower = 3;
     public float friction = 3;
-    public Vector2 curspeed;
-    Rigidbody2D rdbody;
-    public KeyCode KeyCodeUp = KeyCode.W;
-    public KeyCode KeyCodeDown = KeyCode.S;
-    public KeyCode KeyCodeLeft = KeyCode.A;
-    public KeyCode KeyCodeRight = KeyCode.D;
+    public KeyCode KeyCodeUp;
+    public KeyCode KeyCodeDown;
+    public KeyCode KeyCodeLeft;
+    public KeyCode KeyCodeRight;
 
+    Rigidbody2D rdbody;
+    Vector2 curspeed;
 
     void Update()
     {
@@ -32,8 +32,7 @@ public class Movement : MonoBehaviour
 
         if (curspeed.magnitude > maxspeed)
         {
-            curspeed = curspeed.normalized;
-            curspeed *= maxspeed;
+            curspeed = curspeed.normalized * maxspeed;
         }
 
         if (Input.GetKey(KeyCodeUp))

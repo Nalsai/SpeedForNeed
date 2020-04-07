@@ -3,27 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-
     public GameObject Car1Pre;
-    public GameObject RedCarPre;
-    public GameObject Formel1Pre;
     public GameObject Car2Pre;
-    public GameObject BlueCarPre;
-    public GameObject Formel2Pre;
     public GameObject Car3Pre;
-    public GameObject GreenCarPre;
-    public GameObject Formel3Pre;
     public GameObject ComPre;
+
     GameObject Music;
-    GameObject RedCar;
-    GameObject BlueCar;
-    GameObject GreenCar;
+    GameObject Player1;
+    GameObject Player2;
+    GameObject Player3;
+
     Vector3 Position;
     Quaternion Rotation;
 
-    public static bool RedCheat = true;
-    public static bool BlueCheat = true;
-    public static bool GreenCheat = true;
+    public static bool Player1CheckpointsPassed;
+    public static bool Player2CheckpointsPassed;
+    public static bool Player3CheckpointsPassed;
 
     string SceneName;
 
@@ -34,98 +29,69 @@ public class GameController : MonoBehaviour
         if (SceneName == "GreenLight")
         {
             Position = new Vector3(4.5f, 0f, -1f);
-            Car1Pre = RedCarPre;
-            Car2Pre = BlueCarPre;
-            Car3Pre = GreenCarPre;
         }
         else if (SceneName == "HappinessDistance")
         {
             Position = new Vector3(-5.5f, -1.75f, -1f);
-            Car1Pre = Formel1Pre;
-            Car2Pre = Formel2Pre;
-            Car3Pre = Formel3Pre;
         }
+        Rotation = Quaternion.Euler(0, 0, 0);
 
-        Movement m1 = Car1Pre.GetComponent<Movement>();
-        m1.KeyCodeUp = KeyCode.W;
-        m1.KeyCodeDown = KeyCode.S;
-        m1.KeyCodeLeft = KeyCode.A;
-        m1.KeyCodeRight = KeyCode.D;
+        SetKeybindings(Car1Pre, KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D);
+        SetKeybindings(Car2Pre, KeyCode.UpArrow, KeyCode.LeftArrow, KeyCode.DownArrow, KeyCode.RightArrow);
+        SetKeybindings(Car3Pre, KeyCode.I, KeyCode.J, KeyCode.K, KeyCode.L);
 
-        Movement m2 = Car2Pre.GetComponent<Movement>();
-        m2.KeyCodeUp = KeyCode.UpArrow;
-        m2.KeyCodeDown = KeyCode.DownArrow;
-        m2.KeyCodeLeft = KeyCode.LeftArrow;
-        m2.KeyCodeRight = KeyCode.RightArrow;
-
-        Movement m3 = Car3Pre.GetComponent<Movement>();
-        m3.KeyCodeUp = KeyCode.I;
-        m3.KeyCodeDown = KeyCode.K;
-        m3.KeyCodeLeft = KeyCode.J;
-        m3.KeyCodeRight = KeyCode.L;
-
-        if (MenuController.Player == 1)
+        switch (MenuController.Players)
         {
-            Position.x = Position.x + 0.2f;
-            Instantiate(Car1Pre, Position, Rotation);
-            Position.x = Position.x - 0.4f;
-            Instantiate(ComPre, Position, Rotation);
+            case 1:
+                Position.x += 0.2f;
+                Player1 = Instantiate(Car1Pre, Position, Rotation);
+                Position.x -= 0.4f;
+                Instantiate(ComPre, Position, Rotation);
+                break;
+            case 2:
+                Position.x += 0.2f;
+                Player1 = Instantiate(Car1Pre, Position, Rotation);
+                Position.x -= 0.4f;
+                Player2 = Instantiate(Car2Pre, Position, Rotation);
+                break;
+            case 3:
+                Position.x += 0.3f;
+                Player1 = Instantiate(Car1Pre, Position, Rotation);
+                Position.x -= 0.3f;
+                Player2 = Instantiate(Car2Pre, Position, Rotation);
+                Position.x -= 0.3f;
+                Player3 = Instantiate(Car3Pre, Position, Rotation);
+                break;
         }
-        if (MenuController.Player == 2)
-        {
-            Position.x = Position.x + 0.2f;
-            Instantiate(Car1Pre, Position, Rotation);
-            Position.x = Position.x - 0.4f;
-            Instantiate(Car2Pre, Position, Rotation);
-        }
-        if (MenuController.Player == 3)
-        {
-            Position.x = Position.x + 0.3f;
-            Instantiate(Car1Pre, Position, Rotation);
-            Position.x = Position.x - 0.3f;
-            Instantiate(Car2Pre, Position, Rotation);
-            Position.x = Position.x - 0.3f;
-            Instantiate(Car3Pre, Position, Rotation);
-        }
-
-        RedCar = GameObject.FindWithTag("Rot");
-        BlueCar = GameObject.FindWithTag("Blau");
-        GreenCar = GameObject.FindWithTag("Gruen");
 
         Music = GameObject.FindWithTag("Music");
 
-        if (MenuController.Music == false)
-            Music.GetComponent<AudioSource>().mute = true;
-        else
-            Music.GetComponent<AudioSource>().mute = false;
-        if (MenuController.SFX == false)
-        {
-            RedCar.GetComponent<AudioSource>().mute = true;
-            BlueCar.GetComponent<AudioSource>().mute = true;
-            GreenCar.GetComponent<AudioSource>().mute = true;
-        }
-        else
-        {
-            RedCar.GetComponent<AudioSource>().mute = false;
-            BlueCar.GetComponent<AudioSource>().mute = false;
-            GreenCar.GetComponent<AudioSource>().mute = false;
-        }
+        Music.GetComponent<AudioSource>().mute = MenuController.MuteMusic;
 
+        Player1.GetComponent<AudioSource>().mute = MenuController.MuteSFX;
+        if (Player2)
+        {
+            Player2.GetComponent<AudioSource>().mute = MenuController.MuteSFX;
+        }
+        if (Player3)
+        {
+            Player3.GetComponent<AudioSource>().mute = MenuController.MuteSFX;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Rot")
+        switch (collision.tag)
         {
-            RedCheat = false;
-        }
-        if (collision.tag == "Blau")
-        {
-            BlueCheat = false;
-        }
-        if (collision.tag == "Gruen")
-        {
-            GreenCheat = false;
+            case "Player1":
+                Player1CheckpointsPassed = true;
+                break;
+            case "Player2":
+                Player2CheckpointsPassed = true;
+                break;
+            case "Player3":
+                Player3CheckpointsPassed = true;
+                break;
         }
     }
 
@@ -137,5 +103,14 @@ public class GameController : MonoBehaviour
     public void GotoMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    private void SetKeybindings(GameObject g, KeyCode up, KeyCode left, KeyCode down, KeyCode right)
+    {
+        Movement m = g.GetComponent<Movement>();
+        m.KeyCodeUp = up;
+        m.KeyCodeLeft = left;
+        m.KeyCodeDown = down;
+        m.KeyCodeRight = right;
     }
 }

@@ -4,10 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Rot
-  - Blau
-  - Gruen
   - Music
+  - Player1
+  - Player2
+  - Player3
+  - Gruen
+  - Blau
+  - Rot
   layers:
   - Default
   - TransparentFX

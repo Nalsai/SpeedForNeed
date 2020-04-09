@@ -38,25 +38,28 @@ public class LapCounter : MonoBehaviour
                 break;
         }
 
-        LapText.text = "Laps:\nPlayer 1: " + LapsPlayer1 + "\nPlayer 2: " + LapsPlayer2 + "\nPlayer 3: " + LapsPlayer3;
+        LapText.text =
+            "1: Lap " + LapsPlayer1 + "/3\n" +
+            "2: Lap " + LapsPlayer2 + "/3\n" +
+            "3: Lap " + LapsPlayer3 + "/3\n";
 
         if (!won)
         {
-            if (LapsPlayer1 > 3)
+            if (LapsPlayer1 == 3)
             {
                 WinnerCanvas.SetActive(true);
                 WinnerText.text = "Player 1 won the race!";
                 won = true;
             }
 
-            else if (LapsPlayer2 > 3)
+            else if (LapsPlayer2 == 3)
             {
                 WinnerCanvas.SetActive(true);
                 WinnerText.text = "Player 2 won the race!";
                 won = true;
             }
 
-            else if (LapsPlayer3 > 3)
+            else if (LapsPlayer3 == 3)
             {
                 WinnerCanvas.SetActive(true);
                 WinnerText.text = "Player 3 won the race!";

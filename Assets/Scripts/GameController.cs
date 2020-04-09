@@ -68,7 +68,10 @@ public class GameController : MonoBehaviour
 
         Music.GetComponent<AudioSource>().mute = MenuController.MuteMusic;
 
-        Player1.GetComponent<AudioSource>().mute = MenuController.MuteSFX;
+        if (Player1)
+        {
+            Player1.GetComponent<AudioSource>().mute = MenuController.MuteSFX;
+        }
         if (Player2)
         {
             Player2.GetComponent<AudioSource>().mute = MenuController.MuteSFX;

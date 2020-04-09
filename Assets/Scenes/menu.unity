@@ -609,12 +609,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1591398133}
-        m_MethodName: Start1P
-        m_Mode: 1
+        m_MethodName: GameStart
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1041,12 +1041,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1591398133}
-        m_MethodName: Start3P
-        m_Mode: 1
+        m_MethodName: GameStart
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1897,12 +1897,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1591398133}
-        m_MethodName: Start2P
-        m_Mode: 1
+        m_MethodName: GameStart
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2190,6 +2190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b193aee8cded144adf3be72cee8ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SFXToggle: {fileID: 1161353611}
   MusicToggle: {fileID: 1139560657}
   GreenLightToggle: {fileID: 1911513893}
   HappinessDistanceToggle: {fileID: 1729106318}
@@ -2278,6 +2279,7 @@ GameObject:
   - component: {fileID: 1683147921}
   - component: {fileID: 1683147923}
   - component: {fileID: 1683147922}
+  - component: {fileID: 1683147924}
   m_Layer: 5
   m_Name: TrackSelection
   m_TagString: Untagged
@@ -2342,6 +2344,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683147920}
   m_CullTransparentMesh: 0
+--- !u!114 &1683147924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683147920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1708231709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,21 +2514,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 697403631}
   toggleTransition: 1
   graphic: {fileID: 1820610685}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1683147924}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1591398133}
-        m_MethodName: ToggleHappinessDistance
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 0
 --- !u!1 &1820610683
 GameObject:
@@ -2676,6 +2680,7 @@ GameObject:
   - component: {fileID: 1887377255}
   - component: {fileID: 1887377257}
   - component: {fileID: 1887377256}
+  - component: {fileID: 1887377258}
   m_Layer: 5
   m_Name: HappinessDistanceImage
   m_TagString: Untagged
@@ -2739,6 +2744,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887377254}
   m_CullTransparentMesh: 0
+--- !u!114 &1887377258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887377254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fafe2cfe61f6974895a912c3755e8f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1911513891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2819,21 +2837,10 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 370445342}
   toggleTransition: 1
   graphic: {fileID: 862432383}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1683147924}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1591398133}
-        m_MethodName: ToggleGreenLight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_IsOn: 1
 --- !u!1 &1999231050
 GameObject:

@@ -7,12 +7,10 @@ public class MenuController : MonoBehaviour
     public static bool MuteMusic;
     public static bool MuteSFX;
     public static int Players;
+    public Toggle SFXToggle;
     public Toggle MusicToggle;
     public Toggle GreenLightToggle;
     public Toggle HappinessDistanceToggle;
-    string Track = "GreenLight";
-    bool GL = true;
-    bool HD = false;
 
     private void Start()
     {
@@ -21,77 +19,32 @@ public class MenuController : MonoBehaviour
             MuteMusic = true;
         }
         MusicToggle.isOn = !MuteMusic;
+        SFXToggle.isOn = !MuteSFX;
     }
 
     public void ToggleMusic()
     {
-        MuteMusic = !MuteMusic;
+        MuteMusic = !MusicToggle.isOn;
         GameObject.FindWithTag("Music").GetComponent<AudioSource>().mute = MuteMusic;
     }
 
     public void ToggleSFX()
     {
-        MuteSFX = !MuteSFX;
+        MuteSFX = !SFXToggle.isOn;
     }
 
-    public void ToggleGreenLight()
+    public void GameStart(int players)
     {
-        if (GL)
+        string track = "";
+        if (GreenLightToggle.isOn)
         {
-            HappinessDistanceToggle.isOn = true;
-            GL = false;
+            track = "GreenLight";
         }
-        else
+        else if (HappinessDistanceToggle.isOn)
         {
-            HappinessDistanceToggle.isOn = false;
-            GL = true;
+            track = "HappinessDistance";
         }
-
-        if (GreenLightToggle.isOn == true)
-        {
-            Track = "GreenLight";
-        }
-        else if (HappinessDistanceToggle.isOn == true)
-        {
-            Track = "HappinessDistance";
-        }
-    }
-    public void ToggleHappinessDistance()
-    {
-        if (HD)
-        {
-            GreenLightToggle.isOn = true;
-            HD = false;
-        }
-        else
-        {
-            GreenLightToggle.isOn = false;
-            HD = true;
-        }
-
-        if (GreenLightToggle.isOn == true)
-        {
-            Track = "GreenLight";
-        }
-        else if (HappinessDistanceToggle.isOn == true)
-        {
-            Track = "HappinessDistance";
-        }
-    }
-
-    public void Start1P()
-    {
-        Players = 1;
-        SceneManager.LoadScene(Track);
-    }
-    public void Start2P()
-    {
-        Players = 2;
-        SceneManager.LoadScene(Track);
-    }
-    public void Start3P()
-    {
-        Players = 3;
-        SceneManager.LoadScene(Track);
+        Players = players;
+        SceneManager.LoadScene(track);
     }
 }

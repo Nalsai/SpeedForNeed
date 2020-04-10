@@ -47,31 +47,21 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey(KeyCodeLeft))
         {
-            transform.Rotate(Vector3.forward * turnpower);
+            transform.Rotate(Vector3.forward * turnpower * Mathf.Sqrt(curspeed.magnitude));
         }
         if (Input.GetKey(KeyCodeRight))
         {
-            transform.Rotate(Vector3.forward * -turnpower);
+            transform.Rotate(Vector3.forward * -turnpower * Mathf.Sqrt(curspeed.magnitude));
         }
-
-        NoGas();
-    }
-
-    void NoGas()
-    {
-        bool gas;
+        
+        bool gas = false;
         if (Input.GetKey(KeyCodeUp) || Input.GetKey(KeyCodeDown))
         {
             gas = true;
         }
-        else
-        {
-            gas = false;
-        }
-
         if (!gas)
         {
-            rdbody.drag = friction * 2;
+            rdbody.drag = friction * 1.5f;
         }
     }
 }

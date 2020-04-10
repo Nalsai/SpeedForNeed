@@ -99,9 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   power: 15
   maxspeed: 15
-  turnpower: 4
+  turnpower: 2
   friction: 3
-  curspeed: {x: 0, y: 0}
   KeyCodeUp: 119
   KeyCodeDown: 115
   KeyCodeLeft: 97
